@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>        
-        <title>Feature Layer</title>
+        <title>Feature Layer with Tooltip</title>
         <link rel="stylesheet" href="css/tundra.css">
         <link rel="stylesheet" href="css/esri.css">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -84,7 +84,7 @@
                     //close the dialog when the mouse leaves the highlight graphic
                     map.on("load", function () {
                         map.graphics.enableMouseEvents();
-                        map.graphics.on("mouse-out", closeDialog);
+                        map.graphics.on("mouse-out", closeDialog);						
                     });
 
                     mapLayer.on("mouse-over", function (evt) {
